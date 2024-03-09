@@ -1,8 +1,8 @@
 import TransactionChart from "../charts/TransactionChart";
 import DashboardStartsGrid from "./DashboardStartsGrid";
 import BuyerProfileChart from "../charts/BuyerProfileChart";
-import RecentOrders from "../ordersAndProducts/RecentOrders";
-import PopularProducts from "../ordersAndProducts/PopularProducts";
+import RecentOrders from "../dashboardOrders/RecentOrders";
+import PopularProducts from "../dashboardOrders/PopularProducts";
 
 const Dashboard = () => {
   return (

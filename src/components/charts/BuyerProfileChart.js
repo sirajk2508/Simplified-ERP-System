@@ -1,5 +1,6 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
-import { data1,COLORS, renderCustomizedLabel, } from '../lib/constants/config';
+import { data1,COLORS, } from '../lib/constants/config';
+import {renderCustomizedLabel} from '../lib/constants/helper'
 
 const BuyerProfileChart = () => {
   return (

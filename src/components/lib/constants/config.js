@@ -1,194 +1,694 @@
 export const linkClasses =
   "flex items-center gap-2 font-light px-3 py-2 hover:bg-neutral-700 hover:no-underline active:bg-neutral-600 rounded-sm text-base";
 
+export const COLORS = ["#00C49F", "#FFBB28", "#FF8042"];
+
 export const data = [
-	{
-		name: 'Jan',
-		Expense: 4000,
-		Income: 2400
-	},
-	{
-		name: 'Feb',
-		Expense: 3000,
-		Income: 1398
-	},
-	{
-		name: 'Mar',
-		Expense: 2000,
-		Income: 9800
-	},
-	{
-		name: 'Apr',
-		Expense: 2780,
-		Income: 3908
-	},
-	{
-		name: 'May',
-		Expense: 1890,
-		Income: 4800
-	},
-	{
-		name: 'Jun',
-		Expense: 2390,
-		Income: 3800
-	},
-	{
-		name: 'July',
-		Expense: 3490,
-		Income: 4300
-	},
-	{
-		name: 'Aug',
-		Expense: 2000,
-		Income: 9800
-	},
-	{
-		name: 'Sep',
-		Expense: 2780,
-		Income: 3908
-	},
-	{
-		name: 'Oct',
-		Expense: 1890,
-		Income: 4800
-	},
-	{
-		name: 'Nov',
-		Expense: 2390,
-		Income: 3800
-	},
-	{
-		name: 'Dec',
-		Expense: 3490,
-		Income: 4300
-	}
-]
+  {
+    name: "Jan",
+    Expense: 4000,
+    Income: 2400,
+  },
+  {
+    name: "Feb",
+    Expense: 3000,
+    Income: 1398,
+  },
+  {
+    name: "Mar",
+    Expense: 2000,
+    Income: 9800,
+  },
+  {
+    name: "Apr",
+    Expense: 2780,
+    Income: 3908,
+  },
+  {
+    name: "May",
+    Expense: 1890,
+    Income: 4800,
+  },
+  {
+    name: "Jun",
+    Expense: 2390,
+    Income: 3800,
+  },
+  {
+    name: "July",
+    Expense: 3490,
+    Income: 4300,
+  },
+  {
+    name: "Aug",
+    Expense: 2000,
+    Income: 9800,
+  },
+  {
+    name: "Sep",
+    Expense: 2780,
+    Income: 3908,
+  },
+  {
+    name: "Oct",
+    Expense: 1890,
+    Income: 4800,
+  },
+  {
+    name: "Nov",
+    Expense: 2390,
+    Income: 3800,
+  },
+  {
+    name: "Dec",
+    Expense: 3490,
+    Income: 4300,
+  },
+];
 
 export const data1 = [
-	{ name: 'Male', value: 540 },
-	{ name: 'Female', value: 620 },
-	{ name: 'Other', value: 210 }
-]
-
-export const RADIAN = Math.PI / 180
-export const COLORS = ['#00C49F', '#FFBB28', '#FF8042']
-
-export const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
-	const radius = innerRadius + (outerRadius - innerRadius) * 0.5
-	const x = cx + radius * Math.cos(-midAngle * RADIAN)
-	const y = cy + radius * Math.sin(-midAngle * RADIAN)
-
-	return (
-		<text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-			{`${(percent * 100).toFixed(0)}%`}
-		</text>
-	)
-}
+  { name: "Male", value: 540 },
+  { name: "Female", value: 620 },
+  { name: "Other", value: 210 },
+];
 
 export const recentOrderData = [
-	{
-		id: '1',
-		product_id: '4324',
-		customer_id: '23143',
-		customer_name: 'Shirley A. Lape',
-		order_date: '2022-05-17T03:24:00',
-		order_total: '$435.50',
-		current_order_status: 'PLACED',
-		shipment_address: 'Cottage Grove, OR 97424'
-	},
-	{
-		id: '7',
-		product_id: '7453',
-		customer_id: '96453',
-		customer_name: 'Ryan Carroll',
-		order_date: '2022-05-14T05:24:00',
-		order_total: '$96.35',
-		current_order_status: 'CONFIRMED',
-		shipment_address: 'Los Angeles, CA 90017'
-	},
-	{
-		id: '2',
-		product_id: '5434',
-		customer_id: '65345',
-		customer_name: 'Mason Nash',
-		order_date: '2022-05-17T07:14:00',
-		order_total: '$836.44',
-		current_order_status: 'SHIPPED',
-		shipment_address: 'Westminster, CA 92683'
-	},
-	{
-		id: '3',
-		product_id: '9854',
-		customer_id: '87832',
-		customer_name: 'Luke Parkin',
-		order_date: '2022-05-16T12:40:00',
-		order_total: '$334.50',
-		current_order_status: 'SHIPPED',
-		shipment_address: 'San Mateo, CA 94403'
-	},
-	{
-		id: '4',
-		product_id: '8763',
-		customer_id: '09832',
-		customer_name: 'Anthony Fry',
-		order_date: '2022-05-14T03:24:00',
-		order_total: '$876.00',
-		current_order_status: 'OUT_FOR_DELIVERY',
-		shipment_address: 'San Mateo, CA 94403'
-	},
-	{
-		id: '5',
-		product_id: '5627',
-		customer_id: '97632',
-		customer_name: 'Ryan Carroll',
-		order_date: '2022-05-14T05:24:00',
-		order_total: '$96.35',
-		current_order_status: 'DELIVERED',
-		shipment_address: 'Los Angeles, CA 90017'
-	}
-]
+  {
+    id: "1",
+    product_id: "4324",
+    customer_id: "23143",
+    customer_name: "Shirley A. Lape",
+    order_date: "2022-05-17T03:24:00",
+    order_total: "$435.50",
+    current_order_status: "PLACED",
+    shipment_address: "Cottage Grove, OR 97424",
+  },
+  {
+    id: "7",
+    product_id: "7453",
+    customer_id: "96453",
+    customer_name: "Ryan Carroll",
+    order_date: "2022-05-14T05:24:00",
+    order_total: "$96.35",
+    current_order_status: "CONFIRMED",
+    shipment_address: "Los Angeles, CA 90017",
+  },
+  {
+    id: "2",
+    product_id: "5434",
+    customer_id: "65345",
+    customer_name: "Mason Nash",
+    order_date: "2022-05-17T07:14:00",
+    order_total: "$836.44",
+    current_order_status: "SHIPPED",
+    shipment_address: "Westminster, CA 92683",
+  },
+  {
+    id: "3",
+    product_id: "9854",
+    customer_id: "87832",
+    customer_name: "Luke Parkin",
+    order_date: "2022-05-16T12:40:00",
+    order_total: "$334.50",
+    current_order_status: "SHIPPED",
+    shipment_address: "San Mateo, CA 94403",
+  },
+  {
+    id: "4",
+    product_id: "8763",
+    customer_id: "09832",
+    customer_name: "Anthony Fry",
+    order_date: "2022-05-14T03:24:00",
+    order_total: "$876.00",
+    current_order_status: "OUT_FOR_DELIVERY",
+    shipment_address: "San Mateo, CA 94403",
+  },
+  {
+    id: "5",
+    product_id: "5627",
+    customer_id: "97632",
+    customer_name: "Ryan Carroll",
+    order_date: "2022-05-14T05:24:00",
+    order_total: "$96.35",
+    current_order_status: "DELIVERED",
+    shipment_address: "Los Angeles, CA 90017",
+  },
+];
 
 export const popularProducts = [
-	{
-		id: '3432',
-		product_name: 'Macbook M1 Pro 14"',
-		product_thumbnail: 'https://source.unsplash.com/100x100?macbook',
-		product_price: '$1499.00',
-		product_stock: 341
-	},
-	{
-		id: '7633',
-		product_name: 'Samsung Galaxy Buds 2',
-		product_thumbnail: 'https://source.unsplash.com/100x100?earbuds',
-		product_price: '$399.00',
-		product_stock: 24
-	},
-	{
-		id: '6534',
-		product_name: 'Asus Zenbook Pro',
-		product_thumbnail: 'https://source.unsplash.com/100x100?laptop',
-		product_price: '$899.00',
-		product_stock: 56
-	},
-	{
-		id: '9234',
-		product_name: 'LG Flex Canvas',
-		product_thumbnail: 'https://source.unsplash.com/100x100?smartphone',
-		product_price: '$499.00',
-		product_stock: 98
-	},
-	{
-		id: '4314',
-		product_name: 'Apple Magic Touchpad',
-		product_thumbnail: 'https://source.unsplash.com/100x100?touchpad',
-		product_price: '$699.00',
-		product_stock: 0
-	},
-	{
-		id: '4342',
-		product_name: 'Nothing Earbuds One',
-		product_thumbnail: 'https://source.unsplash.com/100x100?earphone',
-		product_price: '$399.00',
-		product_stock: 453
-	}
-]
+  {
+    id: "3432",
+    product_name: 'Macbook M1 Pro 14"',
+    product_thumbnail: "https://source.unsplash.com/100x100?macbook",
+    product_price: "$1499.00",
+    product_stock: 341,
+  },
+  {
+    id: "7633",
+    product_name: "Samsung Galaxy Buds 2",
+    product_thumbnail: "https://source.unsplash.com/100x100?earbuds",
+    product_price: "$399.00",
+    product_stock: 24,
+  },
+  {
+    id: "6534",
+    product_name: "Asus Zenbook Pro",
+    product_thumbnail: "https://source.unsplash.com/100x100?laptop",
+    product_price: "$899.00",
+    product_stock: 56,
+  },
+  {
+    id: "9234",
+    product_name: "LG Flex Canvas",
+    product_thumbnail: "https://source.unsplash.com/100x100?smartphone",
+    product_price: "$499.00",
+    product_stock: 98,
+  },
+  {
+    id: "4314",
+    product_name: "Apple Magic Touchpad",
+    product_thumbnail: "https://source.unsplash.com/100x100?touchpad",
+    product_price: "$699.00",
+    product_stock: 0,
+  },
+  {
+    id: "4342",
+    product_name: "Nothing Earbuds One",
+    product_thumbnail: "https://source.unsplash.com/100x100?earphone",
+    product_price: "$399.00",
+    product_stock: 453,
+  },
+];
+
+export const PRODUCTS_DATA = [
+  {
+    id: 1,
+    name: "iPhone 13",
+    number: "IP-001",
+    price: "$999",
+    description: "Latest iPhone model",
+  },
+  {
+    id: 2,
+    name: "Samsung Galaxy S21",
+    number: "SGS-001",
+    price: "$899",
+    description: "Flagship Samsung smartphone",
+  },
+  {
+    id: 3,
+    name: "Google Pixel 6",
+    number: "GP-001",
+    price: "$799",
+    description: "Google's flagship smartphone",
+  },
+  {
+    id: 4,
+    name: "OnePlus 9 Pro",
+    number: "OP-001",
+    price: "$899",
+    description: "High-end OnePlus smartphone",
+  },
+  {
+    id: 5,
+    name: "Xiaomi Mi 11",
+    number: "XM-001",
+    price: "$699",
+    description: "Affordable flagship from Xiaomi",
+  },
+  {
+    id: 6,
+    name: "Sony Xperia 1 III",
+    number: "SX-001",
+    price: "$1199",
+    description: "Premium Sony smartphone with 4K display",
+  },
+  {
+    id: 7,
+    name: "Huawei P50 Pro",
+    number: "HP-001",
+    price: "$1099",
+    description: "High-quality camera smartphone from Huawei",
+  },
+  {
+    id: 8,
+    name: "Motorola Edge+",
+    number: "ME-001",
+    price: "$799",
+    description: "Motorola's flagship smartphone",
+  },
+  {
+    id: 9,
+    name: "LG Velvet",
+    number: "LV-001",
+    price: "$599",
+    description: "Stylish and sleek smartphone from LG",
+  },
+  {
+    id: 10,
+    name: "Asus ROG Phone 5",
+    number: "AR-001",
+    price: "$999",
+    description: "Gaming-centric smartphone with high-refresh-rate display",
+  },
+  {
+    id: 11,
+    name: "iPhone 14",
+    number: "IP-002",
+    price: "$1099",
+    description: "Latest iPhone model",
+  },
+  {
+    id: 12,
+    name: "Samsung Galaxy S22",
+    number: "SGS-020",
+    price: "$999",
+    description: "Flagship Samsung smartphone",
+  },
+  {
+    id: 13,
+    name: "Google Pixel 7",
+    number: "GP-201",
+    price: "$899",
+    description: "Google's flagship smartphone",
+  },
+  {
+    id: 14,
+    name: "OnePlus 9 Pro",
+    number: "OP-001",
+    price: "$899",
+    description: "High-end OnePlus smartphone",
+  },
+  {
+    id: 15,
+    name: "Xiaomi Mi 11",
+    number: "XM-001",
+    price: "$699",
+    description: "Affordable flagship from Xiaomi",
+  },
+  {
+    id: 16,
+    name: "Sony Xperia 1 III",
+    number: "SX-001",
+    price: "$1199",
+    description: "Premium Sony smartphone with 4K display",
+  },
+  {
+    id: 17,
+    name: "Huawei P50 Pro",
+    number: "HP-001",
+    price: "$1099",
+    description: "High-quality camera smartphone from Huawei",
+  },
+  {
+    id: 18,
+    name: "Motorola Edge+",
+    number: "ME-001",
+    price: "$799",
+    description: "Motorola's flagship smartphone",
+  },
+  {
+    id: 19,
+    name: "LG Velvet",
+    number: "LV-001",
+    price: "$599",
+    description: "Stylish and sleek smartphone from LG",
+  },
+  {
+    id: 20,
+    name: "Asus ROG Phone 5",
+    number: "AR-001",
+    price: "$999",
+    description: "Gaming-centric smartphone with high-refresh-rate display",
+  },
+  {
+    id: 21,
+    name: "iPhone 13",
+    number: "IP-001",
+    price: "$999",
+    description: "Latest iPhone model",
+  },
+  {
+    id: 22,
+    name: "Samsung Galaxy S21",
+    number: "SGS-001",
+    price: "$899",
+    description: "Flagship Samsung smartphone",
+  },
+  {
+    id: 23,
+    name: "Google Pixel 6",
+    number: "GP-001",
+    price: "$799",
+    description: "Google's flagship smartphone",
+  },
+  {
+    id: 24,
+    name: "OnePlus 9 Pro",
+    number: "OP-001",
+    price: "$899",
+    description: "High-end OnePlus smartphone",
+  },
+  {
+    id: 25,
+    name: "Xiaomi Mi 11",
+    number: "XM-001",
+    price: "$699",
+    description: "Affordable flagship from Xiaomi",
+  },
+  {
+    id: 26,
+    name: "Sony Xperia 1 III",
+    number: "SX-001",
+    price: "$1199",
+    description: "Premium Sony smartphone with 4K display",
+  },
+  {
+    id: 27,
+    name: "Huawei P50 Pro",
+    number: "HP-001",
+    price: "$1099",
+    description: "High-quality camera smartphone from Huawei",
+  },
+  {
+    id: 28,
+    name: "Motorola Edge+",
+    number: "ME-001",
+    price: "$799",
+    description: "Motorola's flagship smartphone",
+  },
+  {
+    id: 29,
+    name: "LG Velvet",
+    number: "LV-001",
+    price: "$599",
+    description: "Stylish and sleek smartphone from LG",
+  },
+  {
+    id: 30,
+    name: "Asus ROG Phone 5",
+    number: "AR-001",
+    price: "$999",
+    description: "Gaming-centric smartphone with high-refresh-rate display",
+  },
+];
+
+export const ORDERS_DATA = [
+  {
+    id: "#1",
+    productId: "#4324",
+    customerName: "Shirley A. Lape",
+    orderDate: "17 May 2022",
+    orderTotal: "$435.50",
+    shippingAddress: "Cottage Grove, OR 97424",
+    orderStatus: "placed",
+  },
+  {
+    id: "#2",
+    productId: "#5678",
+    customerName: "John Doe",
+    orderDate: "19 March 2022",
+    orderTotal: "$320.00",
+    shippingAddress: "123 Main St, Springfield, IL 62701",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#3",
+    productId: "#9876",
+    customerName: "Alice Smith",
+    orderDate: "12 March 2022",
+    orderTotal: "$550.75",
+    shippingAddress: "456 Oak St, Portland, OR 97205",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#4",
+    productId: "#1234",
+    customerName: "Bob Johnson",
+    orderDate: "24 March 2022",
+    orderTotal: "$275.30",
+    shippingAddress: "789 Elm St, Seattle, WA 98101",
+    orderStatus: "out_for_delivery",
+  },
+  {
+    id: "#5",
+    productId: "#2468",
+    customerName: "Emily Wilson",
+    orderDate: "8 March 2022",
+    orderTotal: "$410.00",
+    shippingAddress: "101 Pine St, Los Angeles, CA 90001",
+    orderStatus: "delivered",
+  },
+  {
+    id: "#6",
+    productId: "#1357",
+    customerName: "Michael Brown",
+    orderDate: "5 March 2022",
+    orderTotal: "$225.50",
+    shippingAddress: "202 Maple St, Houston, TX 77002",
+    orderStatus: "placed",
+  },
+  {
+    id: "#7",
+    productId: "#7890",
+    customerName: "Jessica Lee",
+    orderDate: "11 March 2022",
+    orderTotal: "$750.00",
+    shippingAddress: "303 Walnut St, Atlanta, GA 30301",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#8",
+    productId: "#5432",
+    customerName: "David Wilson",
+    orderDate: "22 March 2022",
+    orderTotal: "$325.80",
+    shippingAddress: "404 Oak St, Miami, FL 33101",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#9",
+    productId: "#9876",
+    customerName: "Jennifer Davis",
+    orderDate: "14 March 2022",
+    orderTotal: "$280.25",
+    shippingAddress: "505 Pine St, Chicago, IL 60601",
+    orderStatus: "out_for_delivery",
+  },
+  {
+    id: "#10",
+    productId: "#1357",
+    customerName: "Daniel Miller",
+    orderDate: "18 March 2022",
+    orderTotal: "$610.00",
+    shippingAddress: "606 Elm St, Denver, CO 80202",
+    orderStatus: "delivered",
+  },
+  {
+    id: "#11",
+    productId: "#2468",
+    customerName: "Sarah Johnson",
+    orderDate: "2 March 2022",
+    orderTotal: "$500.00",
+    shippingAddress: "707 Pine St, San Francisco, CA 94101",
+    orderStatus: "placed",
+  },
+  {
+    id: "#12",
+    productId: "#7890",
+    customerName: "James Smith",
+    orderDate: "9 March 2022",
+    orderTotal: "$720.50",
+    shippingAddress: "808 Maple St, New York, NY 10001",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#13",
+    productId: "#1234",
+    customerName: "Emma Davis",
+    orderDate: "16 March 2022",
+    orderTotal: "$450.75",
+    shippingAddress: "909 Oak St, Philadelphia, PA 19101",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#14",
+    productId: "#4324",
+    customerName: "Chris Wilson",
+    orderDate: "20 March 2022",
+    orderTotal: "$300.25",
+    shippingAddress: "1010 Elm St, Boston, MA 02101",
+    orderStatus: "out_for_delivery",
+  },
+  {
+    id: "#15",
+    productId: "#5678",
+    customerName: "Laura Taylor",
+    orderDate: "25 March 2022",
+    orderTotal: "$600.00",
+    shippingAddress: "111 Pine St, Dallas, TX 75201",
+    orderStatus: "delivered",
+  },
+  {
+    id: "#16",
+    productId: "#9876",
+    customerName: "Kevin Brown",
+    orderDate: "3 March 2022",
+    orderTotal: "$350.50",
+    shippingAddress: "1212 Maple St, Phoenix, AZ 85001",
+    orderStatus: "placed",
+  },
+  {
+    id: "#17",
+    productId: "#1357",
+    customerName: "Linda Clark",
+    orderDate: "7 March 2022",
+    orderTotal: "$425.80",
+    shippingAddress: "1313 Oak St, Minneapolis, MN 55401",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#18",
+    productId: "#2468",
+    customerName: "Mark Johnson",
+    orderDate: "13 March 2022",
+    orderTotal: "$500.25",
+    shippingAddress: "1414 Elm St, Orlando, FL 32801",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#19",
+    productId: "#7890",
+    customerName: "Sarah Anderson",
+    orderDate: "6 March 2022",
+    orderTotal: "$420.50",
+    shippingAddress: "707 Oak St, Boston, MA 02101",
+    orderStatus: "placed",
+  },
+  {
+    id: "#20",
+    productId: "#2468",
+    customerName: "Michael Scott",
+    orderDate: "9 March 2022",
+    orderTotal: "$275.00",
+    shippingAddress: "808 Maple St, San Francisco, CA 94101",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#21",
+    productId: "#4324",
+    customerName: "Pam Beesly",
+    orderDate: "15 March 2022",
+    orderTotal: "$620.75",
+    shippingAddress: "909 Pine St, Philadelphia, PA 19101",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#22",
+    productId: "#1234",
+    customerName: "Dwight Schrute",
+    orderDate: "20 March 2022",
+    orderTotal: "$325.30",
+    shippingAddress: "1010 Elm St, Dallas, TX 75201",
+    orderStatus: "out_for_delivery",
+  },
+  {
+    id: "#23",
+    productId: "#5678",
+    customerName: "Angela Martin",
+    orderDate: "12 March 2022",
+    orderTotal: "$410.00",
+    shippingAddress: "1111 Walnut St, Nashville, TN 37201",
+    orderStatus: "delivered",
+  },
+  {
+    id: "#24",
+    productId: "#9876",
+    customerName: "Stanley Hudson",
+    orderDate: "4 March 2022",
+    orderTotal: "$240.50",
+    shippingAddress: "1212 Oak St, Orlando, FL 32801",
+    orderStatus: "placed",
+  },
+  {
+    id: "#25",
+    productId: "#1357",
+    customerName: "Oscar Martinez",
+    orderDate: "8 March 2022",
+    orderTotal: "$780.00",
+    shippingAddress: "1313 Maple St, Phoenix, AZ 85001",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#26",
+    productId: "#7890",
+    customerName: "Kevin Malone",
+    orderDate: "11 March 2022",
+    orderTotal: "$275.80",
+    shippingAddress: "1414 Pine St, Charlotte, NC 28201",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#27",
+    productId: "#5432",
+    customerName: "Andy Bernard",
+    orderDate: "17 March 2022",
+    orderTotal: "$320.25",
+    shippingAddress: "1515 Elm St, Minneapolis, MN 55401",
+    orderStatus: "out_for_delivery",
+  },
+  {
+    id: "#28",
+    productId: "#2468",
+    customerName: "Creed Bratton",
+    orderDate: "19 March 2022",
+    orderTotal: "$620.00",
+    shippingAddress: "1616 Oak St, Detroit, MI 48201",
+    orderStatus: "delivered",
+  },
+  {
+    id: "#29",
+    productId: "#1357",
+    customerName: "Phyllis Vance",
+    orderDate: "21 March 2022",
+    orderTotal: "$345.50",
+    shippingAddress: "1717 Maple St, San Antonio, TX 78201",
+    orderStatus: "placed",
+  },
+  {
+    id: "#30",
+    productId: "#1234",
+    customerName: "Toby Flenderson",
+    orderDate: "25 March 2022",
+    orderTotal: "$285.00",
+    shippingAddress: "1818 Elm St, Las Vegas, NV 89101",
+    orderStatus: "confirmed",
+  },
+  {
+    id: "#31",
+    productId: "#5678",
+    customerName: "Kelly Kapoor",
+    orderDate: "28 March 2022",
+    orderTotal: "$410.75",
+    shippingAddress: "1919 Pine St, Salt Lake City, UT 84101",
+    orderStatus: "shipped",
+  },
+  {
+    id: "#32",
+    productId: "#4324",
+    customerName: "Ryan Howard",
+    orderDate: "29 March 2022",
+    orderTotal: "$295.30",
+    shippingAddress: "2020 Oak St, Kansas City, MO 64101",
+    orderStatus: "out_for_delivery",
+  },
+  {
+    id: "#33",
+    productId: "#2468",
+    customerName: "Meredith Palmer",
+    orderDate: "31 March 2022",
+    orderTotal: "$610.00",
+    shippingAddress: "2121 Elm St, New Orleans, LA 70112",
+    orderStatus: "delivered",
+  },
+];

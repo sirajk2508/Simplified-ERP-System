@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Products from "./components/ordersAndProducts/Products";
+import Products from "./components/products/Products";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Layout from "./components/shared/Layout";
+import OrdersPage from "./components/orders/OrdersPage";
 
 const approuter = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const approuter = createBrowserRouter([
       {
         path: "products",
         element: <Products />,
+      },
+      {
+        path: "orders",
+        element: <OrdersPage/>
       },
       {
         path: "/",
