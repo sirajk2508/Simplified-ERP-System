@@ -3,7 +3,7 @@ import { IoBagHandle, IoPieChart, IoPeople, IoCart } from "react-icons/io5";
 
 const DashboardStartsGrid = () => {
   return (
-    <div className="flex gap-4 w-full p-4 pb-1">
+    <div className="flex gap-4 w-full py-3 px-4 pb-1">
       <BoxWrapper>
         <div className="rounded-full h-12 w-12 flex items-center justify-center bg-sky-500">
           <IoBagHandle className="text-2xl text-white" />

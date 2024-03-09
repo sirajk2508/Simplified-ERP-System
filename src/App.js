@@ -1,8 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
+import Products from "./components/ordersAndProducts/Products";
+import Dashboard from "./components/Dashboard/Dashboard";
 import Layout from "./components/shared/Layout";
-import Products from "./components/Products";
-
 
 const approuter = createBrowserRouter([
   {
