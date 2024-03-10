@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { ORDERS_DATA } from "../lib/constants/config";
-
 const Pagination = ({currentPage, totalPages, handlePageChange}) => {
 
   return (
