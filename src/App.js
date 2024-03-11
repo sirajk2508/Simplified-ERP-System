@@ -3,6 +3,7 @@ import Products from "./components/products/Products";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Layout from "./components/shared/Layout";
 import OrdersPage from "./components/orders/OrdersPage";
+import Calender from "./components/calender/Calender";
 
 const approuter = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const approuter = createBrowserRouter([
         path: "/",
         element: <Dashboard />,
         index: true
+      },
+      {
+        path: "/calender",
+        element: <Calender/>
       },
     ],
   },
