@@ -66,9 +66,9 @@ const Calender = () => {
   };
 
   return (
-    <div className="w-full h-[50%] md:p-10 lg:p-12 p-2">
-      <h1>Calendar</h1>
-      <div className="w-full h-full">
+    <div className="w-full h-[50%] md:p-10 p-2">
+      <h1 className="md:text-3xl font-bold text-xl text-center">Calendar</h1>
+      <div className="w-full h-full cursor-pointer">
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
@@ -76,6 +76,7 @@ const Calender = () => {
           events={events}
           dateClick={handleDateClick}
           eventClick={handleEventClick}
+          height="75vh"
         />
       </div>
     </div>
