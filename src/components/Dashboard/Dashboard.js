@@ -6,14 +6,14 @@ import PopularProducts from "../dashboardOrders/PopularProducts";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="md:flex md:flex-col md:gap-4">
       <DashboardStartsGrid />
-      <div className="flex flex-row gap-4 w-full">
+      <div className="md:flex md:flex-row md:gap-4 w-full">
         <TransactionChart />
         <BuyerProfileChart />
       </div>
 
-      <div className="flex flex-row gap-4 w-full">
+      <div className="md:flex md:flex-row md:gap-4 w-full">
         <RecentOrders/>
         <PopularProducts/>
       </div>

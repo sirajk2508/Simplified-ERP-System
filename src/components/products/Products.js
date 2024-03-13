@@ -17,12 +17,12 @@ const Products = () => {
   };
 
   return (
-    <div className="m-2 p-2">
-      <div className="flex items-center justify-around mb-4">
-        <h1 className="text-3xl font-bold">Product Management</h1>
+    <div className="m-2 p-2 my-5 md:h-[92vh] lg:h-[80vh]">
+      <div className="flex flex-wrap md:flex-nowrap items-center justify-around md:mb-7 mb-4">
+        <h1 className="md:text-3xl text-2xl font-bold text-gray-700">Product Management</h1>
         {!showAddForm && (
           <button
-            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md"
+            className="bg-green-500 hover:bg-green-600 m-5 md:m-0 text-white px-4 py-2 rounded-md"
             onClick={() => setShowAddForm(true)}
           >
             Add Product

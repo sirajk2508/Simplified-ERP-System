@@ -25,7 +25,7 @@ const Calender = () => {
     start: moment(order.StartTime).format(),
     end: moment(order.EndTime).format(),
     backgroundColor: getOrderColor(order.orderStatus),
-    orderDetails: order
+    orderDetails: order,
   }));
 
   const handleDateClick = (arg) => {
@@ -41,10 +41,7 @@ const Calender = () => {
       );
     });
 
-    console.log("Out for delivery orders:", outForDeliveryOrders);
-
     if (outForDeliveryOrders.length > 0) {
-      // Construct the message for out_for_delivery orders
       const message = outForDeliveryOrders
         .map((order) => `Order ${order.id} - ${order.customerName}`)
         .join("\n");
@@ -60,15 +57,16 @@ const Calender = () => {
 
     // Construct the message for the clicked event
     const message = `Order #${orderDetails?.id} - ${orderDetails?.customerName} (${orderDetails?.orderStatus})`;
-    if(orderDetails.orderStatus === 'out_for_delivery')
-      alert(message);
-    else alert('No due orders for today');
+    if (orderDetails.orderStatus === "out_for_delivery") alert(message);
+    else alert("No due orders for today");
   };
 
   return (
-    <div className="w-full h-[50%] md:p-10 p-2">
-      <h1 className="md:text-3xl font-bold text-xl text-center">Calendar</h1>
-      <div className="w-full h-full cursor-pointer">
+    <div className="w-full lg:h-[50%] md:h-[93vh] h-[88vh] md:p-10 p-2 pr-4 mr-3">
+      <h1 className="md:text-4xl font-bold text-3xl text-gray-700 my-5 md:my-0 text-center">
+        Calendar
+      </h1>
+      <div className="w-full h-full cursor-pointer text-sm mt-4">
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"

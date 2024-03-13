@@ -12,8 +12,8 @@ import { data } from "../lib/constants/config";
 
 const TransactionChart = () => {
   return (
-    <div className="h-[22rem] bg-white p-1 pr-4 ml-4 mr-1 rounded-sm border border-gray-200 flex flex-col flex-1">
-      <strong className="text-gray-700 font-medium">Transactions</strong>
+    <div className="h-[23rem] md:h-[22rem] bg-white p-1 md:ml-4 rounded-sm border border-gray-200 flex flex-col flex-1 mb-5 md:mb-0">
+      <strong className="text-gray-700 font-medium m-2 text-lg md:text-left text-center">Transactions</strong>
       <div className="mt-3 w-full flex-1 text-xs">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart

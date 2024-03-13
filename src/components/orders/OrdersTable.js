@@ -19,7 +19,7 @@ const OrdersTable = () => {
     );
   
     return (
-        <div className="overflow-x-auto">
+        <div className="w-[25rem] md:w-full overflow-x-auto">
           <table className="min-w-full table-auto border-collapse">
             <TableHead/>
             <TableBody paginatedOrders={paginatedOrders}/>

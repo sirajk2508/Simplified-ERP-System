@@ -1,9 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import classNames from "classnames";
 import { linkClasses } from "../lib/constants/config";
+import { useSidebar } from "../context/SidebarContext";
 
 
 const SidebarLink = ({ item }) => {
+
+  const { toggleSidebar } = useSidebar();
+
   const { pathname } = useLocation();
     if(!item)
         return;
@@ -16,6 +20,7 @@ const SidebarLink = ({ item }) => {
           : "text-neutral-400",
         linkClasses
       )}
+      onClick={toggleSidebar}
     >
       <span className="text-xl">{item?.icon}</span>
       {item?.label}

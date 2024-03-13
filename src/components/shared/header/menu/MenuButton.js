@@ -6,7 +6,7 @@ const MenuButton = () => {
     <Menu.Button className="ml-2 inline-flex rounded-full focus:outline-none focus:ring-2 focus:ring-neutral-400">
       <span className="sr-only">Open user menu</span>
       <div
-        className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"
+        className="lg:h-10 lg:w-10 w-8 h-8 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"
         style={{
           backgroundImage: 'url("https://source.unsplash.com/80x80?face',
         }}

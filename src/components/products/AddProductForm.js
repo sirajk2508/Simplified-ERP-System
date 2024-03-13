@@ -38,10 +38,10 @@ const AddProductForm = ({ onAdd, onCancel }) => {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center  w-full justify-center">
       <form
         onSubmit={handleSubmit}
-        className="mb-4 w-[80%] p-5 bg-white shadow-sm rounded-sm"
+        className="mb-4 md:w-[60%] w-full  p-5 bg-white shadow-sm rounded-sm"
       >
         <input
           type="text"
@@ -49,7 +49,7 @@ const AddProductForm = ({ onAdd, onCancel }) => {
           value={formData.name}
           onChange={handleChange}
           placeholder="Product Name"
-          className="block w-full border-gray-300 bg-neutral-100 rounded-md mb-2 px-5 py-1"
+          className="block w-full border-gray-300 bg-neutral-50 rounded-md mb-2 px-5 py-1"
         />
         <input
           type="text"
@@ -57,7 +57,7 @@ const AddProductForm = ({ onAdd, onCancel }) => {
           value={formData.category}
           onChange={handleChange}
           placeholder="Category"
-          className="block w-full border-gray-300 bg-neutral-100 rounded-md mb-2 px-5 py-1"
+          className="block w-full border-gray-300 bg-neutral-50 rounded-md mb-2 px-5 py-1"
         />
         <input
           type="text"
@@ -65,7 +65,7 @@ const AddProductForm = ({ onAdd, onCancel }) => {
           value={formData.price}
           onChange={handleChange}
           placeholder="Price"
-          className="block w-full border-gray-300 bg-neutral-100 rounded-md mb-2 px-5 py-1"
+          className="block w-full border-gray-300 bg-neutral-50 rounded-md mb-2 px-5 py-1"
         />
         <input
           type="number"
@@ -73,7 +73,7 @@ const AddProductForm = ({ onAdd, onCancel }) => {
           value={formData.stock}
           onChange={handleChange}
           placeholder="Stock"
-          className="block w-full border-gray-300 bg-neutral-100 rounded-md mb-2 px-5 py-1"
+          className="block w-full border-gray-300 bg-neutral-50 rounded-md mb-2 px-5 py-1"
         />
         <div className="flex justify-center items-center space-x-2">
           <button

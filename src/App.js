@@ -4,6 +4,10 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Layout from "./components/shared/Layout";
 import OrdersPage from "./components/orders/OrdersPage";
 import Calender from "./components/calender/Calender";
+import Transactions from "./components/dummyComponents/Transactions";
+import Messages from "./components/dummyComponents/Messages";
+import Settings from "./components/dummyComponents/Settings";
+import Support from "./components/dummyComponents/Support";
 
 const approuter = createBrowserRouter([
   {
@@ -27,6 +31,22 @@ const approuter = createBrowserRouter([
         path: "/calender",
         element: <Calender/>
       },
+      {
+        path: "/transactions",
+        element: <Transactions/>
+      },
+      {
+        path: "/messages",
+        element: <Messages/>,
+      },
+      {
+        path: "/settings",
+        element: <Settings/>
+      },
+      {
+        path: "/support",
+        element: <Support/>
+      },
     ],
   },
 ]);
@@ -34,7 +54,7 @@ const approuter = createBrowserRouter([
 function App() {
   return (
     <RouterProvider router={approuter}>
-      <div className=""></div>
+      <div className="bg-gray-100"></div>
     </RouterProvider>
   );
 }

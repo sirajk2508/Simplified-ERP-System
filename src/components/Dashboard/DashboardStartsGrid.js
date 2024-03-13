@@ -1,11 +1,11 @@
 import BoxWrapper from "./BoxWrapper";
 import { IoBagHandle, IoPieChart, IoPeople, IoCart } from "react-icons/io5";
 
-const DashboardStartsGrid = () => {
+const DashboardStatsGrid = () => {
   return (
-    <div className="flex gap-4 w-full py-3 px-4 pb-1">
+    <div className="lg:flex lg:gap-4 lg:w-full py-3 lg:px-4 pb-5 lg:pb-0">
       <BoxWrapper>
-        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-sky-500">
+        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-sky-500 ml-5 lg:ml-0">
           <IoBagHandle className="text-2xl text-white" />
         </div>
         <div className="pl-4">
@@ -19,7 +19,7 @@ const DashboardStartsGrid = () => {
         </div>
       </BoxWrapper>
       <BoxWrapper>
-        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-orange-600">
+        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-orange-600 ml-5 lg:ml-0">
           <IoPieChart className="text-2xl text-white" />
         </div>
         <div className="pl-4">
@@ -35,7 +35,7 @@ const DashboardStartsGrid = () => {
         </div>
       </BoxWrapper>
       <BoxWrapper>
-        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-yellow-400">
+        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-yellow-400 ml-5 lg:ml-0">
           <IoPeople className="text-2xl text-white" />
         </div>
         <div className="pl-4">
@@ -51,7 +51,7 @@ const DashboardStartsGrid = () => {
         </div>
       </BoxWrapper>
       <BoxWrapper>
-        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-green-600">
+        <div className="rounded-full h-12 w-12 flex items-center justify-center bg-green-600 ml-5 lg:ml-0">
           <IoCart className="text-2xl text-white" />
         </div>
         <div className="pl-4">
@@ -68,4 +68,4 @@ const DashboardStartsGrid = () => {
   );
 };
 
-export default DashboardStartsGrid;
+export default DashboardStatsGrid;

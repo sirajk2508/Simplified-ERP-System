@@ -4,9 +4,9 @@ import { popularProducts } from "../lib/constants/config";
 
 const PopularProducts = () => {
   return (
-    <div className="w-[20rem] bg-white p-4 mr-4 rounded-sm border border-gray-200 h-[17rem] overflow-y-scroll">
-      <strong className="text-gray-700 font-medium">Popular Products</strong>
-      <div className="mt-4 flex flex-col gap-3">
+    <div className="md:w-[20rem] w-[27rem] bg-white text-center md:text-left p-4 md:mr-4 rounded-sm border border-gray-200 lg:h-[17rem] md:h-[23rem] h-[25rem] mb-4 md:mb-0 overflow-y-scroll">
+      <strong className="text-gray-700 font-medium text-lg">Popular Products</strong>
+      <div className="mt-4 flex flex-col gap-3 text-left">
         {popularProducts.map((product) => (
           <Link
             key={product.id}
