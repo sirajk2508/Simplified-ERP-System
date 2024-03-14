@@ -120,3 +120,6 @@ These instructions should provide users with clear guidance on how to set up and
 
 ## Usage GIF
 ![Usage GIF](path/to/usage-gif.gif)
+
+## Website
+You can access the website [here](https://simplified-erp.netlify.app/).
