@@ -112,11 +112,11 @@ These instructions should provide users with clear guidance on how to set up and
 ### Orders Page
 ![Orders Page](./screenshots/OrdersPage.png)
 
-### Due orders on a particular date
-![Due Orders](./screenshots/Due_Orders_On_a_Particular_day.png)
-
 ### Calendar
 ![Calendar](./screenshots/Calender.png)
+
+### Due orders on a particular date
+![Due Orders](./screenshots/Due_Orders_On_a_Particular_day.png)
 
 ## Usage GIF
 ![Usage GIF](path/to/usage-gif.gif)
