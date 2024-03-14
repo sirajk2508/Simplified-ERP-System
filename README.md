@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# ERP System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository contains the source code for an ERP (Enterprise Resource Planning) system built with React.js. It includes various npm packages and dependencies to enhance functionality and user experience.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+## Setup Instructions:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository to your local machine.
+2. Install Node.js if you haven't already.
+3. Navigate to the project directory.
+4. Run `npm install` to install dependencies.
+5. Configure Tailwind CSS using `npx tailwindcss init`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To install the necessary packages and libraries, use the following npm commands:
 
-### `npm test`
+These instructions should provide users with clear guidance on how to set up and interact with your website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **create-react-app:**
+   ```
+   npm install -g create-react-app
+   ```
 
-### `npm run build`
+2. **tailwindcss:**
+   ```
+   npm install tailwindcss
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **configure tailwindcss:**
+   ```
+   npx tailwindcss init
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **react-router-dom:**
+   ```
+   npm install react-router-dom
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **headless ui:**
+   ```
+   npm install @headlessui/react
+   ```
 
-### `npm run eject`
+6. **react icons:**
+   ```
+   npm install react-icons
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. **date-fns:**
+   ```
+   npm install date-fns
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+8. **moment:**
+   ```
+   npm install moment
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+9. **Recharts:**
+   ```
+   npm install recharts
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+10. **Classnames:**
+   ```
+   npm install classnames
+   ```
 
-## Learn More
+## Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Core Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React:** A JavaScript library for building user interfaces.
+- **React DOM:** Entry point for working with the DOM tree.
+- **React Router DOM:** Declarative routing for React applications.
+- **React Icons:** Icons library for React applications.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
 
-### Code Splitting
+### Additional Libraries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **@fullcalendar/interaction:** Interactivity plugin for FullCalendar.
+- **@headlessui/react:** Accessible UI components for React applications.
+- **Date-fns:** Modern JavaScript date utility library.
+- **Moment:** Parse, validate, manipulate, and display dates and times in JavaScript.
+- **Recharts:** A composable charting library built on React components.
+- **Classnames:** A simple JavaScript utility for conditionally joining classNames together.
 
-### Analyzing the Bundle Size
+## Interacting with the Website:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Start the development server with `npm start`.
+2. Access the website by opening your browser and navigating to [http://localhost:3000](http://localhost:3000).
+3. Explore different modules using the navigation menu.
+4. Enter data and interact with forms and input fields to update records in `Products` page.
+5. Access the calendar module to view the due orders on a particular date.
 
-### Making a Progressive Web App
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Dashboard
+![Dashboard](./screenshots/Dashboard.png)
 
-### Advanced Configuration
+### Navigation Sidebar
+![Navigation Sidebar](./screenshots/Sidebar.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Products Page
+![Products Page](./screenshots/ProductsPage.png)
 
-### Deployment
+### Add Products
+![Add Products](./screenshots/Add_Products_to_Page.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Orders Page
+![Orders Page](./screenshots/OrdersPage.png)
 
-### `npm run build` fails to minify
+### Due orders on a particular date
+![Due Orders](./screenshots/Due_Orders_On_a_Particular_day.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Calendar
+![Calendar](./screenshots/Calender.png)
+
+## Usage GIF
+![Usage GIF](path/to/usage-gif.gif)
